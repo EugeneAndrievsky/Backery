@@ -1,0 +1,63 @@
+.gallary {
+  position: relative;
+
+  & .row {
+    justify-content: space-between;
+  }
+}
+
+.gallary__title {
+  position: absolute;
+  z-index: 2;
+
+  top: 50%;
+  left: 50%;
+
+  padding-top: 113px;
+
+  width: 300px;
+  height: 300px;
+
+  font-family: Alegreya, Georgia , serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+
+  color: #c9b176;
+  background-image: url("../img/gallary-tastes-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transform: translate(-50%, -50%);
+}
+
+.gallary__img-wrapper {
+   flex-basis: 48.36%;
+   max-width: 48.36%;
+
+  margin-bottom: 20px;
+
+  outline: 5px solid white;
+  outline-offset: -11px;
+
+  &:nth-child(3),
+  &:nth-child(4) {
+    margin-bottom: 0;
+  }
+
+  &:nth-child(2n) {
+    // margin-left: 10px;
+  }
+
+  &:nth-child(2n-1) {
+     // margin-right: 10px;
+     // margin-bottom: 10px;
+  }
+}
+
+.gallary__img {
+  max-width: 100%;
+  height: auto;
+}

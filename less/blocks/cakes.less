@@ -1,0 +1,95 @@
+.cakes {
+  background-image: url("../img/cakes-bg.jpg");
+}
+
+.cakes__wrapper {
+  position: relative;
+
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.cakes__art {
+  margin-bottom: 40px;
+}
+
+.cakes__gallary {
+  // padding-top: 30px; примерно. для md+
+  margin-bottom: 40px;
+}
+
+.cakes__chef {
+  padding: 0;
+  padding-bottom: 15px;
+}
+
+.cakes__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-family: Alegreya, Georgia , serif;
+  font-size: 48px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: .025em;
+
+  color: #56534c;
+}
+
+.cakes__slogan {
+  //margin-bottom: 65px; sm+
+
+  font-family: Alegreya, Georgia , serif;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+
+  color: #a47d5e;
+}
+
+.cakes__desc {
+  display: none;
+}
+
+@media @sm {
+
+  .cakes__slogan {
+    margin-bottom: 25px;
+  }
+
+  .cakes__desc {
+    display: block;
+
+    font-family: "Proxima Nova", Arial, serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: .1em;
+
+    color: #56534c;
+  }
+
+}
+
+@media @md {
+
+  .cakes__slogan {
+    margin-bottom: 65px;
+  }
+
+}
+
+@media @lg {
+
+  .cakes__chef {
+     position: absolute;
+     top: 370px;
+  }
+
+}
+
+@media @xl {
+
+}

@@ -1,0 +1,91 @@
+.chef__title {
+  margin-bottom: 40px;
+
+  font-family: Alegreya, Georgia , serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: .025em;
+  text-transform: capitalize;
+
+  color: #56534c;
+
+}
+
+.chef__person {
+  flex-wrap: nowrap;
+
+  max-width: 375px;
+
+  margin: auto;
+  margin-bottom: 40px;
+
+  align-items: center;
+}
+
+.chef__img {
+  padding: 0;
+}
+
+.chef__name {
+  padding: 14px 0;
+  border-top: 1px solid #d7d5ca;
+  border-bottom: 1px solid #d7d5ca;
+
+  width: 111px;
+  height: 60px;
+
+  font-family: Alegreya, Georgia , serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: .025em;
+
+  color: #56534c;
+}
+
+.chef__qoute {
+  position: relative;
+  display: block;
+
+  margin: 0 auto;
+
+  max-width: 410px;
+
+  font-family: "Scriptina Pro", Georgia , serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: .025em;
+
+  color: #a47d5e;
+
+  &::before,
+  &::after {
+    position: absolute;
+
+    font-family: "Times New Roman", Georgia , serif;
+    font-size: 60px;
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: .025em;
+
+    color: rgba(86, 83, 76, .5);
+  }
+
+  &::before {
+    content: "“";
+
+    top: -17px;
+    left: 0;
+  }
+
+  &::after {
+    content: "”";
+
+    bottom: -7px;
+    right: 0;
+
+    transform: scaleY(-1);
+  }
+}
