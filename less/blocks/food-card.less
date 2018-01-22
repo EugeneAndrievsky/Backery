@@ -1,0 +1,142 @@
+.food-card {
+  background-image: url("../img/food-card-bg@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.food-card__wrapper {
+  position: relative;
+  padding: 0;
+}
+
+.food-card__img {
+  max-width: 100%;
+  min-height: 320px;
+
+  background-image: url("../img/food-card-img@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.food-card__section {
+  padding-top: 40px;
+  padding-bottom: 50px;
+
+  background: #ffffff url("../img/food-card__section-bg@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.food-card__title {
+  margin-bottom: 15px;
+
+  font-family: Alegreya, Georgia, serif;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: .025em;
+  color: #56534c;
+}
+
+.food-card__subtitle {
+  margin-bottom: 30px;
+
+  font-family: Alegreya, Georgia, serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .1em;
+  color: #a47d5e;
+}
+
+.food-card__desc {
+  margin-bottom: 40px;
+
+  font-family: "Proxima Nova", Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: .1em;
+  color: #56534c;
+}
+
+.food-card__slider {
+
+}
+
+
+@media @sm {
+
+  .food-card {
+    padding-top: 90px;
+    padding-bottom: 75px;
+  }
+
+  .food-card__wrapper {
+    box-shadow: 0 25px 54px rgba(105, 80, 58, .45);
+  }
+
+  .food-card__img {
+    min-height: 400px;
+    background-size: 110%;
+    background-position: 0 -65px;
+  }
+
+  .food-card__subtitle {
+    margin-bottom: 50px;
+  }
+
+}
+
+@media @md {
+
+  .food-card {
+    padding-top: 115px;
+    padding-bottom: 90px;
+  }
+
+  .food-card__img {
+    min-height: 384px;
+    background-size: cover;
+    background-position: 0 0;
+  }
+
+  .food-card__section {
+
+    box-shadow: -2px 0 rgba(0, 0, 0, .25);
+  }
+
+  .food-card__title {
+    text-align: left;
+  }
+
+  .food-card__subtitle {
+    text-align: left;
+  }
+
+  .food-card__desc {
+    text-align: left;
+  }
+
+}
+
+@media @lg {
+
+  .food-card__wrapper {
+    margin-top: 140px;
+    margin-bottom: 105px;
+  }
+
+}
+
+@media @xl {
+
+  .page-footer {
+
+  }
+
+}

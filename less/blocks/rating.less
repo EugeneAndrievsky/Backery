@@ -1,0 +1,46 @@
+.rating {
+  position: absolute;
+   top: 15px;
+   left: 15px;
+
+   display: flex;
+   flex-direction: column;
+
+   // transform: translateY(-50%);
+}
+
+.rating__star {
+  width: 21px;
+  height: 21px;
+
+  background-image: url(../img/star.svg);
+  background-repeat: no-repeat;
+
+  & + & {
+    margin-top: 5px;
+  }
+
+  &--filled {
+    background-image: url(../img/star--filled.svg);
+  }
+}
+
+
+@media @sm {
+
+  .rating {
+    top: 25px;
+  }
+
+}
+
+
+@media @sm {
+
+  .rating {
+    top: 50%;
+
+    transform: translateY(-50%);
+  }
+
+}
