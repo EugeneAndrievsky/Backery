@@ -1,19 +1,17 @@
 .rating {
   position: absolute;
-   top: 15px;
-   left: 15px;
+  top: 15px;
+  left: 15px;
 
-   display: flex;
-   flex-direction: column;
-
-   // transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
 }
 
 .rating__star {
   width: 21px;
   height: 21px;
 
-  background-image: url(../img/star.svg);
+  background-image: url("../img/star.svg");
   background-repeat: no-repeat;
 
   & + & {
@@ -21,7 +19,7 @@
   }
 
   &--filled {
-    background-image: url(../img/star--filled.svg);
+    background-image: url("../img/star--filled.svg");
   }
 }
 
@@ -29,13 +27,13 @@
 @media @sm {
 
   .rating {
-    top: 25px;
+    top: 35px;
   }
 
 }
 
 
-@media @sm {
+@media @md {
 
   .rating {
     top: 50%;
