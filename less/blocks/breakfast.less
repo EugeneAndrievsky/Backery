@@ -1,0 +1,154 @@
+.breakfast__wrapper {
+  position: relative;
+}
+
+.breakfast__wrapper::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 230px;
+
+  // поправить фон
+  background-image: url("../img/breakfast-wheat.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.breakfast__price-list {
+  padding: 40px 0;
+
+  background: #525567 url("../img/breakfast-bg@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 28% 0;
+}
+
+.breakfast__title {
+  margin: 0;
+
+  font-family: Alegreya, Georgia, serif;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: .05em;
+  color: #ffffff;
+}
+
+
+.breakfast__slogan {
+  margin-bottom: 55px;
+
+  font-family: Alegreya, Georgia, serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #c8a593;
+}
+
+.breakfast__item {
+  & + & {
+    margin-top: 50px;
+  }
+
+}
+
+.breakfast__meal {
+  margin: 0;
+  margin-bottom: 6px;
+
+  font-family: Alegreya, Georgia, serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: .05em;
+  color: #ffffff;
+}
+
+.breakfast__desc {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-family: "Proxima Nova", Georgia, serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: .05em;
+  color: #c2beba;
+}
+
+.breakfast__price {
+  font-family: Alegreya, Georgia, serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: .05em;
+  color: #dfc691;
+}
+
+
+@media @sm {
+
+  .breakfast__price-list {
+    padding: 80px 0;
+    background-position: 22% 0;
+  }
+
+}
+
+@media @md {
+
+
+
+  .breakfast {
+    padding: 85px 0;
+
+    background: #525567 url("../img/breakfast-bg@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 45% 0;
+  }
+
+  .breakfast__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .breakfast__price-list {
+    padding: 0;
+    background: none;
+  }
+}
+
+@media @lg {
+
+  .breakfast {
+    background-position: 50% 0;
+  }
+
+}
+
+
+
+@media @xl {
+
+  .breakfast__wrapper {
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .breakfast__price-list {
+    margin-left: 165px;
+  }
+
+}
