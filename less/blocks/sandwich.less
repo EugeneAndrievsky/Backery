@@ -1,0 +1,96 @@
+.sandwich {
+  background-color: #f3f1e9;
+  background-image: url("../img/sandwich-bg@1x.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.sandwich__wrapper {
+  padding: 0;
+  padding-top: 95px;
+  padding-bottom: 110px;
+}
+
+
+
+.sandwich__title {
+  margin-bottom: 15px;
+
+  font-family: Alegreya, Georgia, serif;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: .025em;
+  color: #56534c;
+
+}
+
+.sandwich__slogan {
+  margin-bottom: 45px;
+
+  font-family: Alegreya, Georgia, serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .1em;
+  color: #a47d5e;
+}
+
+.sandwich__card {
+  position: relative;
+
+  margin-bottom: 45px;
+}
+
+.sandwich__img {
+  width: 100%;
+  height: auto;
+
+  border: 5px solid #ffffff;
+}
+
+.sandwich__ingredients {
+  min-height: 600px;
+  flex-direction: column;
+
+}
+
+.sandwich__time {
+  display: flex;
+}
+
+
+@media @sm {
+
+  .sandwich__img {
+    border: 7px solid #ffffff;
+  }
+
+  .sandwich__ingredients {
+    min-height: none;
+    flex-direction: row;
+  }
+
+}
+
+
+@media @md {
+
+  .sandwich__ingredients {
+    min-height: none;
+    flex-direction: column;
+  }
+
+}
+
+
+@media @lg {
+
+  .sandwich__img {
+    border: 10px solid #ffffff;
+  }
+
+}
