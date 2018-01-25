@@ -5,7 +5,6 @@
   outline: 1px dashed #9e9c93;
   outline-offset: -11px;
 
-
   //добавить тени
   &:before {
     content: "";
@@ -13,7 +12,7 @@
     right: -13px;
     top: 4%;
 
-    display: block;
+    display: none;
     width: 13px;
     height: 92%;
 
@@ -29,7 +28,7 @@
     right: -25px;
     top: 8%;
 
-    display: block;
+    display: none;
     width: 12px;
     height: 84%;
 
@@ -41,7 +40,7 @@
 }
 
 .menu__wrapper {
-  width: 440px;
+  max-width: 440px;
   margin: 0 auto;
   padding: 11px 0;
 }
@@ -137,6 +136,7 @@
 .menu__desc {
   margin: 0;
   margin-bottom: 45px;
+  padding: 0 20px;
 
   font-family: "Proxima Nova", Georgia, serif;
   font-size: 14px;
@@ -162,6 +162,10 @@
 
   .menu__title {
     font-size: 44px;
+  }
+
+  .menu__desc {
+    padding: 0 40px;
   }
 
 }
