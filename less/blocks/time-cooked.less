@@ -1,16 +1,14 @@
 .time-cooked {
-  position: absolute;
-  top: 0;
-  right: 0;
+  &--gold {
+    background-image: url("../img/time-cooked-bg@1x.jpg");
+    background-size: 100% 100%;
 
-  width: 135px;
-  height: 135px;
-  padding-top: 16px;
+    box-shadow: 0 16px 26px rgba(105, 80, 58, .45);
+  }
 
-  background: #fff url("../img/time-cooked-bg@1x.jpg");
-  background-size: 100% 100%;
-
-  box-shadow: 0 16px 26px rgba(105, 80, 58, .45);
+  &--black {
+    background-color: rgba(255, 255, 255, .8);
+  }
 }
 
 .time-cooked__title {
@@ -34,6 +32,18 @@
   text-align: center;
   letter-spacing: .066em;
   color: #dfc691;
+
+  &--gold {
+    font-size: 60px;
+    line-height: 60px;
+    color: #dfc691;
+  }
+
+  &--black {
+    font-size: 60px;
+    line-height: 60px;
+    color: #56534c;
+  }
 }
 
 .time-cooked__unit {
@@ -48,14 +58,6 @@
 
 
 @media @sm {
-
-  .time-cooked {
-    width: 200px;
-    height: 200px;
-    padding-top: 24px;
-
-    box-shadow: 0 25px 54px rgba(105, 80, 58, .45);
-  }
 
   .time-cooked__title {
     margin-bottom: 3px;
@@ -82,16 +84,6 @@
 
 @media @md {
 
-  .time-cooked {
-    left: 165px;
-
-    width: 135px;
-    height: 135px;
-    padding-top: 16px;
-
-    border-bottom-left-radius: 35%;
-  }
-
   .time-cooked__title {
     margin-bottom: 2px;
 
@@ -117,18 +109,6 @@
 
 @media @lg {
 
-  .time-cooked {
-    top: -45px;
-    right: -45px;
-    left: auto;
-
-    width: 200px;
-    height: 200px;
-    padding-top: 24px;
-
-    border-bottom-left-radius: 0;
-  }
-
   .time-cooked__title {
     margin-bottom: 3px;
 
@@ -153,9 +133,4 @@
 
 @media @xl {
 
-  .time-cooked {
-    top: -45px;
-    right: 70px;
-  }
-  
 }
