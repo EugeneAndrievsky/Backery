@@ -1,6 +1,5 @@
 .main-nav__list {
   margin-bottom: 10px;
-
 }
 
 .main-nav__list:last-of-type {
@@ -58,29 +57,30 @@
     }
   }
 
-.main-nav--footer {
-  padding-bottom: 20px;
+  .main-nav--footer {
+    padding-bottom: 20px;
 
-  .main-nav__list {
-    margin-bottom: 0;
-  }
+    .main-nav__list {
+      margin-bottom: 0;
+    }
 
-  .main-nav__list:first-of-type {
-    border-top: 1px solid gray;
-  }
+    .main-nav__list:first-of-type {
+      border-top: 1px solid gray;
+    }
 
-  .main-nav__list:last-of-type {
-    padding-bottom: 0;
+    .main-nav__list:last-of-type {
+      padding-bottom: 0;
 
-    border-bottom: 1px solid gray;
-  }
+      border-bottom: 1px solid gray;
+    }
 
-  .main-nav__item {
-    line-height: 50px;
-  }
+    .main-nav__item {
+      line-height: 50px;
+    }
 
-  .main-nav__item + .main-nav__item::before {
-    left: -3px;
+    .main-nav__item + .main-nav__item::before {
+      left: -3px;
+    }
   }
 
 }
@@ -96,6 +96,12 @@
     margin-bottom: 0;
   }
 
+  .main-nav--header{
+     .main-nav__item + .main-nav__item::before {
+        display: none;
+      }
+    }
+
   .main-nav--footer {
     padding-bottom: 40px;
 
@@ -106,8 +112,6 @@
     .main-nav__item {
       line-height: 60px;
     }
-
-
   }
 
 }
@@ -115,37 +119,62 @@
 
 @media @lg {
 
-.main-nav--header {
-  .main-nav__item + .main-nav__item::before {
-      left: -28px;
+  .main-nav--header {
+    .main-nav__item + .main-nav__item::before {
+      left: -32px;
 
       display: block;
     }
   }
 
-.main-nav--footer {
-  .main-nav__list:first-of-type {
-    padding-left: 10px;
-    border-bottom: 1px solid gray;
-  }
+  .main-nav--footer {
 
-  .main-nav__list:last-of-type {
-    border-top: 1px solid gray;
-  }
+    .main-nav__list:first-of-type {
+      .main-nav__item + .main-nav__item::before {
+        left: -25px;
+      }
+
+      border-bottom: 1px solid gray;
+    }
+
+    .main-nav__list:last-of-type {
+      .main-nav__item + .main-nav__item::before {
+        left: -29px;
+      }
+
+      border-top: 1px solid gray;
+    }
 
     .main-nav__item {
       line-height: 70px;
     }
-}
+  }
 
 }
 
 
 @media @xl {
 
-  .main-nav__item {
-    & + &::before {
-      left: -43px;
+  .main-nav--header {
+    .main-nav__item + .main-nav__item::before {
+        left: -47px;
+
+        display: block;
+      }
+    }
+
+  .main-nav--footer {
+
+    .main-nav__list:first-of-type {
+      .main-nav__item + .main-nav__item::before {
+        left: -37px;
+      }
+    }
+
+    .main-nav__list:last-of-type {
+      .main-nav__item + .main-nav__item::before {
+        left: -40px;
+      }
     }
   }
 

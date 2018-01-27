@@ -5,17 +5,16 @@
 .breakfast__wrapper::after {
   content: "";
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 10px;
+  bottom: 10px;
 
   display: block;
   width: 100%;
   height: 230px;
 
-  // поправить фон
   background-image: url("../img/breakfast-wheat.svg");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right -170px bottom -80px;
 }
 
 .breakfast__price-list {
@@ -56,7 +55,6 @@
   & + & {
     margin-top: 50px;
   }
-
 }
 
 .breakfast__meal {
@@ -107,8 +105,6 @@
 
 @media @md {
 
-
-
   .breakfast {
     padding: 85px 0;
 
@@ -123,11 +119,20 @@
     justify-content: space-around;
   }
 
+  .breakfast__wrapper::after {
+    right: 0px;
+    bottom: -90px;
+
+    background-position: right -180px bottom 10px;
+  }
+
   .breakfast__price-list {
     padding: 0;
     background: none;
   }
+
 }
+
 
 @media @lg {
 
@@ -135,8 +140,11 @@
     background-position: 50% 0;
   }
 
-}
+  .breakfast__wrapper::after {
+    background-position: right -100px bottom 15px;
+  }
 
+}
 
 
 @media @xl {
@@ -145,6 +153,21 @@
     justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
+  }
+
+  .breakfast__wrapper::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+    display: block;
+    width: 200px;
+    height: 170px;
+
+    background-image: url("../img/breakfast-wheat.svg");
+    background-repeat: no-repeat;
+    background-position: right -180px bottom -85px;
   }
 
   .breakfast__price-list {
