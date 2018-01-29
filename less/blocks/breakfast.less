@@ -53,7 +53,23 @@
 
 .breakfast__item {
   & + & {
+    position: relative;
+
     margin-top: 50px;
+  }
+
+  & + &::before {
+    content: "";
+    position: absolute;
+    top: -37px;
+    left: 50%;
+
+    width: 90px;
+    height: 27px;
+
+    background-image: url("../img/wheat-icon@1x.png");
+
+    transform: translateX(-50%);
   }
 }
 
